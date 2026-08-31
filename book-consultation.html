@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Executive Consultation: Anicalls AI &amp; GCC Advisory</title>
+  <meta name="description" content="Book a 30–60 minute executive briefing with an Anicalls AI transformation specialist. No pitch. Just ROI analysis and a clear AI deployment roadmap for your organisation." />
+  <link rel="canonical" href="https://www.anicalls.com/book-consultation.html" />
+  <link rel="icon" type="image/svg+xml" href="assests/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-wrapper">
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-icon-home" aria-label="Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></a>
+      <a href="ai-workforce.html">AI Workforce</a>
+      <a href="talent.html">IT Talent</a>
+      <a href="anicalls-careers.html">Careers</a>
+      <a href="gcc.html">GCC &amp; BOT</a>
+      <a href="managed-operations.html">Managed Ops</a>
+      <a href="anicalls-pricing-ites.html">Pricing</a>
+      <a href="agent-os.html">Agent OS™</a>
+      <a href="solutions.html">Solutions &amp; ROI</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="index.html#contact" data-booking="Executive Briefing" aria-label="Book a Consultation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></a>
+      <button class="menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="page-main">
+
+    <section class="cro-tool-hero hero-fullscreen">
+      <div class="container">
+        <span class="overline">No pitch. No obligation. Just ROI clarity.</span>
+        <h1>Book Your Executive Consultation</h1>
+        <p>30–60 minutes with a senior Anicalls AI transformation specialist. Pick a date and time directly on our live calendar below. You'll get an instant confirmation and a calendar invite at your business email.</p>
+      </div>
+    </section>
+
+    <section class="cro-booking-section">
+      <div class="container">
+        <div class="cro-booking-layout">
+
+          <!-- LEFT — Zoho Bookings calendar embed -->
+          <div class="cro-booking-form-col">
+            <div class="zoho-embed-card" id="zohoBookingCard">
+
+              <div class="zoho-embed-state" id="zohoLoading">
+                <div class="zoho-spinner" aria-hidden="true"></div>
+                <p>Loading available times…</p>
+              </div>
+
+              <div class="zoho-embed-state" id="zohoEmpty" style="display:none">
+                <div class="zoho-embed-state__icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>
+                </div>
+                <h3>Online calendar coming online shortly</h3>
+                <p>We're finalising our live booking calendar. Meanwhile, send us your details and preferred time and we'll confirm within one business day.</p>
+                <a class="cro-quiz-btn cro-quiz-btn--primary" href="index.html#contact">Request a Callback →</a>
+              </div>
+
+              <div class="zoho-embed-state" id="zohoError" style="display:none">
+                <div class="zoho-embed-state__icon zoho-embed-state__icon--warn" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+                </div>
+                <h3>Couldn't load the booking calendar</h3>
+                <p>Your browser or network may be blocking the embedded calendar. You can open it directly instead. It's the same calendar, just in its own tab.</p>
+                <a class="cro-quiz-btn cro-quiz-btn--primary" id="zohoFallbackLink" href="#" target="_blank" rel="noopener">Open Booking Calendar →</a>
+              </div>
+
+              <iframe id="zohoBookingFrame" class="zoho-embed-frame" style="display:none" title="Book a meeting with Anicalls: live calendar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div><!-- /form col -->
+
+          <!-- RIGHT — Trust sidebar -->
+          <aside class="cro-booking-sidebar">
+            <div class="cro-sidebar-block">
+              <p class="cro-sidebar-overline">What to expect</p>
+              <ul class="cro-sidebar-list">
+                <li><span class="cro-sidebar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;flex-shrink:0;"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M9 11h6M9 15h6"/></svg></span><span><strong>Pre-call research</strong>: We research your company, industry, and competitive position before every briefing</span></li>
+                <li><span class="cro-sidebar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;flex-shrink:0;"><path d="M5 21V10M12 21V4M19 21v-8"/></svg></span><span><strong>Live ROI modelling</strong>: We'll model the AI opportunity for your specific headcount and cost structure</span></li>
+                <li><span class="cro-sidebar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;flex-shrink:0;"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5l-2 5-5 2 2-5z"/></svg></span><span><strong>Clear first steps</strong>: You leave with a specific, sequenced action plan, not a brochure</span></li>
+                <li><span class="cro-sidebar-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;flex-shrink:0;"><path d="M6 6l12 12M18 6L6 18"/></svg></span><span><strong>No pitch, no pressure</strong>: This is a discovery call, not a sales presentation</span></li>
+              </ul>
+            </div>
+            <div class="cro-sidebar-block cro-sidebar-block--dark">
+              <p class="cro-sidebar-overline" style="color:rgba(255,255,255,0.6);">What executives say</p>
+              <blockquote class="cro-sidebar-quote">"The briefing was more candid than any vendor call I've had. They told us where AI wouldn't work for us as clearly as where it would."</blockquote>
+              <cite class="cro-sidebar-cite">CFO, Pan-African Bank, $2.11M AUM</cite>
+            </div>
+            <div class="cro-sidebar-block">
+              <p class="cro-sidebar-overline">Enterprise track record</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px;">
+                <div style="text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:var(--blue);">300+</div><div style="font-size:0.75rem;color:var(--muted);line-height:1.3;">Enterprise AI<br>deployments</div></div>
+                <div style="text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:var(--blue);">40+</div><div style="font-size:0.75rem;color:var(--muted);line-height:1.3;">Countries<br>covered</div></div>
+                <div style="text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:var(--blue);">$1.70M+</div><div style="font-size:0.75rem;color:var(--muted);line-height:1.3;">Client value<br>generated</div></div>
+                <div style="text-align:center;"><div style="font-size:1.5rem;font-weight:900;color:var(--blue);">16</div><div style="font-size:0.75rem;color:var(--muted);line-height:1.3;">Industries<br>served</div></div>
+              </div>
+            </div>
+          </aside>
+
+        </div><!-- /booking-layout -->
+      </div>
+    </section>
+
+  </main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+        <p style="font-size:13.5px;color:var(--faint);margin-top:16px;max-width:300px">AI employees, niche global IT talent, GCC build-outs and managed operations, one accountable partner across six countries.</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="ai-workforce.html">AI Workforce</a>
+        <a href="agent-os.html">Agent OS™</a>
+        <a href="talent.html">Global IT Talent</a>
+        <a href="gcc.html">GCC &amp; BOT</a>
+        <a href="managed-operations.html">Managed Operations</a>
+      </div>
+      <div>
+        <h5>Decide</h5>
+        <a href="solutions.html">Solutions &amp; ROI</a>
+        <a href="solutions.html#calculator">Cost Advantage Calculator</a>
+        <a href="gcc.html#bot-calculator">GCC BOT Calculator</a>
+        <a href="solutions.html#compare">Model Comparisons</a>
+        <a href="case-studies.html">Case Studies</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Anicalls</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Anicalls (Pty) Ltd. All rights reserved.</span>
+      <span>Compliance-first · Human-in-the-loop AI · GDPR-aware · POPIA-aware</span>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   ZOHO BOOKINGS EMBED — CONFIGURE BEFORE GOING LIVE
+   ══════════════════════════════════════════════════════════════════
+   1. In Zoho Bookings, open the service/staff booking page you want
+      to expose (Booking Pages → your page → Share → Embed on Website).
+   2. Copy the booking page URL (looks like
+      https://yourcompany.zohobookings.com/portal-embed#/yourservice
+      or https://bookings.zoho.com/portal/yourcompany#/yourservice).
+   3. Paste it below as ZOHO_BOOKING_URL. Leave it empty and the page
+      will show a graceful "calendar coming online shortly" message
+      with a fallback to the Contact form instead of a broken embed.
+   4. In Zoho Bookings → Settings → Availability/Embed, make sure this
+      site's domain is allowed to embed the page (Zoho blocks unknown
+      origins by default for security). */
+var ZOHO_BOOKING_URL = ''; /* e.g. 'https://anicalls.zohobookings.com/portal-embed#/ExecutiveBriefing' */
+
+(function () {
+  var loadingEl  = document.getElementById('zohoLoading');
+  var emptyEl    = document.getElementById('zohoEmpty');
+  var errorEl    = document.getElementById('zohoError');
+  var frame      = document.getElementById('zohoBookingFrame');
+  var fallback   = document.getElementById('zohoFallbackLink');
+  var loadTimer  = null;
+
+  function showState(el) {
+    [loadingEl, emptyEl, errorEl].forEach(function (s) { if (s) s.style.display = 'none'; });
+    if (el) el.style.display = 'flex';
+  }
+
+  if (!ZOHO_BOOKING_URL) {
+    showState(emptyEl);
+    return;
+  }
+
+  if (fallback) fallback.href = ZOHO_BOOKING_URL;
+
+  frame.addEventListener('load', function () {
+    clearTimeout(loadTimer);
+    showState(null);
+    frame.style.display = 'block';
+  });
+  frame.addEventListener('error', function () {
+    clearTimeout(loadTimer);
+    console.error('[ZohoBooking] iframe failed to load');
+    showState(errorEl);
+  });
+
+  /* Zoho blocking the embed (wrong domain, network filtering, ad-blocker)
+     shows up as an iframe that never fires load/error — so time-box it. */
+  loadTimer = setTimeout(function () {
+    console.warn('[ZohoBooking] Calendar did not load within 12s — showing fallback');
+    showState(errorEl);
+  }, 12000);
+
+  frame.src = ZOHO_BOOKING_URL;
+})();
+
+const navEl=document.querySelector('nav');
+if(navEl){
+  const onScroll=()=>navEl.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+}
+</script>
+<script src="assests/js/login-modal.js?v=3"></script>
+<script src="assests/js/booking.js?v=3"></script>
+</body>
+</html>
+
+

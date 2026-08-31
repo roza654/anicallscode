@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITES Pricing | Anicalls Global Service Delivery Rates</title>
+<meta name="description" content="Published IT-enabled services rates across India, South Africa, Malaysia, the UAE, the UK and the USA. Cost-plus pricing built on 2026 market salary data, with volume and bundle tiers.">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="canonical" href="https://www.anicalls.com/anicalls-pricing-ites.html">
+<meta property="og:title" content="Anicalls ITES Pricing: Cost-Plus, Published, Benchmarked">
+<meta property="og:description" content="Service desk, technical support and back-office delivery from six countries. Rates built openly from 2026 market salary data.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.anicalls.com/anicalls-pricing-ites.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* anicalls-pricing-ites.html — page-specific components, built only from styles.css tokens */
+.note{color:var(--faint);font-size:12.5px;line-height:1.6}
+.subhead{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:48px 0 22px;padding-bottom:10px;border-bottom:1px solid var(--line-soft)}
+.scroll-hint{font-size:12px;color:var(--faint);font-family:var(--font-mono);letter-spacing:.05em;margin:0 0 18px}
+@media(min-width:761px){.scroll-hint{display:none}}
+
+/* callouts + honest notes */
+.callout{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:var(--radius-sm);padding:22px 24px;margin:26px 0;box-shadow:var(--shadow-sm)}
+.callout.warm{border-left-color:var(--gold)}
+.callout.stop{border-left-color:#B23B3B;border-color:rgba(178,59,59,.35)}
+.callout h4{font-size:15px;margin-bottom:10px}
+.callout p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.65}
+.callout p+p{margin-top:12px}
+.honest{border:1px dashed var(--line);padding:22px 24px;border-radius:var(--radius-sm);margin:24px 0}
+.honest h4{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.honest p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.65}
+
+/* formula */
+.formula{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;margin-bottom:30px;box-shadow:var(--shadow-sm)}
+.frow{display:grid;grid-template-columns:34px 1fr auto;gap:16px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line-soft)}
+.frow:last-child{border-bottom:0}
+.fn{font-family:var(--font-mono);font-size:12px;color:var(--blue);letter-spacing:.1em}
+.fl{font-size:14.5px;color:var(--text)}
+.fl small{display:block;color:var(--muted);font-size:12.5px;margin-top:4px;line-height:1.5}
+.fv{font-family:var(--font-mono);font-size:14px;color:var(--text);white-space:nowrap}
+.frow.total{border-top:2px solid var(--blue);margin-top:8px;padding-top:16px}
+.frow.total .fl,.frow.total .fv{font-weight:750;color:var(--blue)}
+
+/* tier cards */
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:26px}
+.tier{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
+.tier.rec{border-color:rgba(23,23,23,.28);background:linear-gradient(180deg,rgba(23,23,23,.045),transparent),var(--surface)}
+.tier-n{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.tier-m{font-family:var(--font-display);font-size:2rem;font-weight:700;letter-spacing:-.02em;line-height:1;margin-bottom:4px;color:var(--text)}
+.tier-s{font-size:12.5px;color:var(--faint);margin-bottom:16px}
+.tier p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.6}
+.gate{display:inline-block;margin-top:14px;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;background:var(--surface-2);border:1px solid var(--line);color:var(--gold);padding:5px 10px;border-radius:99px}
+
+/* bundle cards */
+.bundle{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.bundle.feature{border-color:rgba(23,23,23,.28);background:linear-gradient(180deg,rgba(23,23,23,.035),transparent),var(--surface)}
+.b-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:8px}
+.b-name{font-size:1.2rem;font-weight:750;letter-spacing:-.018em;margin:0}
+.b-tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:var(--surface-2);border:1px solid var(--line);color:var(--muted);padding:4px 9px;border-radius:99px}
+.b-tag.on{border-color:rgba(23,23,23,.3);color:var(--blue)}
+.b-price{margin-left:auto;text-align:right}
+.b-price strong{font-family:var(--font-mono);font-size:1.5rem;font-weight:600;display:block;line-height:1.1;color:var(--text)}
+.b-price small{color:var(--faint);font-size:12px}
+.bundle>p{font-size:14px;color:var(--muted);line-height:1.6}
+.b-mix{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.b-mix .chip{font-family:var(--font-mono);font-size:11px;background:var(--surface-2);border:1px solid var(--line);color:var(--muted);padding:5px 10px;border-radius:99px}
+
+/* rate tables (inside .light sections) */
+#rates table,#bot table{min-width:640px}
+.light table caption{caption-side:top;text-align:left;font-size:12px;color:var(--faint);padding:0 0 12px;font-family:var(--font-body)}
+.light td.rate,.light th.rate{font-family:var(--font-mono);font-weight:600;white-space:nowrap}
+.light td.first{font-weight:650;color:var(--text)}
+.light td.mk{color:var(--faint);font-size:12px;background:transparent}
+.light tr.hl td{background:rgba(23,23,23,.05)}
+.light td.rowhead{font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);padding:14px}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-icon-home" aria-label="Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></a>
+      <a href="ai-workforce.html">AI Workforce</a>
+      <a href="talent.html">IT Talent</a>
+      <a href="anicalls-careers.html">Careers</a>
+      <a href="gcc.html">GCC &amp; BOT</a>
+      <a href="managed-operations.html">Managed Ops</a>
+      <a href="anicalls-pricing-ites.html" class="active" aria-current="page">Pricing</a>
+      <a href="agent-os.html">Agent OS™</a>
+      <a href="solutions.html">Solutions &amp; ROI</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="index.html#contact" data-booking="Executive Briefing" aria-label="Book a Consultation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></a>
+      <button class="menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="page-hero hero-fullscreen">
+  <div class="hero-media" aria-hidden="true">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" onerror="this.parentElement.classList.add('video-failed')">
+      <source src="assests/pricing.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="wrap reveal page-hero-content" data-dir="left">
+    <div class="crumb"><a href="index.html">Home</a><i>/</i>Pricing</div>
+    <h1>We show you our cost. Then we add our <span class="accent">margin</span>.</h1>
+    <p class="sub">Every rate on this page is built the same way, in the open: the median market salary for the role in that country, plus statutory employer cost, plus the cost of running the service, plus a stated Anicalls margin. Nothing is hidden in the middle. When you buy more, the margin comes down and we say by exactly how much.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#rates">See the rate table <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#bundles">Bundle options</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SCOPE WARNING ============ -->
+<section id="scope" style="background:var(--graphite)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Read this first</div>
+      <h2>This page prices IT-enabled services. Specialist roles are a different book.</h2>
+    </div>
+    <div class="callout stop reveal">
+      <h4>Two rate books, and they are not interchangeable</h4>
+      <p><strong style="color:var(--text)">IT-enabled services (this page):</strong> service desk, technical support, application support, back-office processing, finance and accounting operations, data operations, customer operations. Repeatable, volume-driven, delivered to a defined scope and SLA.</p>
+      <p><strong style="color:var(--text)">Specialist and enterprise consulting (priced separately):</strong> SAP S/4HANA, Oracle Fusion, core banking, cybersecurity architecture, data engineering, cloud architecture. Scarce, certification-gated, priced on scarcity rather than cost-plus.</p>
+      <p>The rates below run roughly 60% to 75% below our specialist rates for a reason: they are a different labour market. Applying an ITES rate to an S/4HANA architect would not be a discount, it would be a misquote. Ask us for the specialist rate card if that is what you need.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULA ============ -->
+<section id="formula">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">How every rate on this page is built</div>
+      <h2>Four lines. No fifth line.</h2>
+      <p class="intro">Worked below for a Level 2 technical support engineer delivered from Hyderabad. The same four lines build every rate in the table, in every country.</p>
+    </div>
+
+    <div class="formula reveal">
+      <div class="frow"><span class="fn">01</span>
+        <span class="fl">Median market salary<small>The middle of the current advertised range for this role in this city, taken from live job-board and salary-survey data, refreshed quarterly.</small></span>
+        <span class="fv">INR 52,000 / month</span></div>
+      <div class="frow"><span class="fn">02</span>
+        <span class="fl">Statutory employer cost<small>Provident fund, ESIC, gratuity, professional tax, labour welfare fund. Legally unavoidable and varies by country.</small></span>
+        <span class="fv">+ 22%</span></div>
+      <div class="frow"><span class="fn">03</span>
+        <span class="fl">Cost of running the service<small>Team leader at one to twelve, quality assurance, workforce management, training, cover for leave and shrinkage, workspace, ITSM and telephony licences, network and business continuity.</small></span>
+        <span class="fv">+ 45%</span></div>
+      <div class="frow"><span class="fn">04</span>
+        <span class="fl">Anicalls margin<small>Standard tier. Falls to 20% on volume and 15% on a large bundle. See the tiers below.</small></span>
+        <span class="fv">+ 30%</span></div>
+      <div class="frow total"><span class="fn">=</span>
+        <span class="fl">Your rate</span>
+        <span class="fv">USD 9.23 / hour</span></div>
+    </div>
+
+    <div class="honest reveal">
+      <h4>Why we publish line 03</h4>
+      <p>Most offshore vendors quote you a single number and let you assume it is mostly salary. It is not. Running a service desk means paying for supervision, quality checking, holiday cover and the licences the desk runs on, whether or not anyone mentions them. We would rather show you that cost than pretend our margin is 75%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARGIN TIERS ============ -->
+<section id="tiers" style="background:var(--graphite)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Margin tiers</div>
+      <h2>Buy more, we take less. Here is the ladder and the gate on each rung.</h2>
+      <p class="intro">The volume gates are real, not a negotiating position. Below each threshold the tier does not cover the cost of winning and running the contract, and we would rather tell you that now than discover it in month nine.</p>
+    </div>
+
+    <div class="tiers reveal">
+      <div class="tier">
+        <p class="tier-n">Pilot</p>
+        <p class="tier-m">+45%</p>
+        <p class="tier-s">margin on delivered cost</p>
+        <p>Small teams and proof-of-concept engagements. Carries a higher margin because the setup, recruitment and account cost is the same whether you take one person or ten.</p>
+        <span class="gate">1–4 FTE · 3-month minimum</span>
+      </div>
+      <div class="tier rec">
+        <p class="tier-n">Standard · most clients</p>
+        <p class="tier-m">+30%</p>
+        <p class="tier-s">margin on delivered cost</p>
+        <p>The default. A dedicated pod with a named team leader, defined SLA and monthly reporting. Every rate in the table below is shown at this tier unless marked otherwise.</p>
+        <span class="gate">5–24 FTE · 6-month minimum</span>
+      </div>
+      <div class="tier">
+        <p class="tier-n">Volume</p>
+        <p class="tier-m">+20%</p>
+        <p class="tier-s">margin on delivered cost</p>
+        <p>Applies when you commit to scale. The delivery pod, quality function and workforce management are shared across a larger base, so the cost of running it falls and we pass that through.</p>
+        <span class="gate">25–59 FTE · 12-month minimum</span>
+      </div>
+      <div class="tier">
+        <p class="tier-n">Large bundle</p>
+        <p class="tier-m">+15%</p>
+        <p class="tier-s">margin on delivered cost</p>
+        <p>Multi-tower engagements: two or more service lines, or two or more delivery countries, on one contract. The thinnest margin we can run sustainably.</p>
+        <span class="gate">60+ FTE · 24-month minimum</span>
+      </div>
+    </div>
+
+    <div class="callout warm reveal">
+      <h4>Why the gates exist, stated plainly</h4>
+      <p>A 15% margin on delivered cost is a 13% gross margin. That covers the sales cost, the corporate overhead of operating in six countries, and a profit, only when it is spread across a large contract. Offered on a five-person deal it is loss-making, and a vendor running your service at a loss is a risk to you before it is a risk to us. If you want bundle pricing, commit to bundle volume and it is yours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OFFSHORE RATES ============ -->
+<section class="light" id="rates">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Offshore managed delivery</div>
+      <h2>India, South Africa and Malaysia</h2>
+      <p class="intro">Anicalls runs the service: our team leaders, our quality function, our workspace, our tooling. Rates in USD per hour, with the per-FTE monthly equivalent at 147.3 billable hours. Local currency billing available in all three.</p>
+    </div>
+
+    <p class="scroll-hint">Scroll table →</p>
+    <div class="tbl-wrap reveal">
+      <table>
+        <caption>Standard tier (+30%) shown in the main columns. Volume and bundle rates in the final two columns.</caption>
+        <thead><tr>
+          <th class="first" scope="col">Role band</th>
+          <th class="rate" scope="col">Standard USD/hr</th>
+          <th class="rate" scope="col">Per FTE per month</th>
+          <th class="rate" scope="col">Volume +20%</th>
+          <th class="rate" scope="col">Bundle +15%</th>
+          <th scope="col">Market salary median used</th>
+        </tr></thead>
+        <tbody>
+          <tr class="hl"><td colspan="6" class="rowhead">India — Hyderabad</td></tr>
+          <tr><td class="first">L1 · Service desk / process associate</td><td class="rate">$4.97</td><td class="rate">$732</td><td class="rate">$4.59</td><td class="rate">$4.39</td><td class="mk">INR 28,000/mo</td></tr>
+          <tr><td class="first">L2 · Technical support engineer</td><td class="rate">$9.23</td><td class="rate">$1,359</td><td class="rate">$8.52</td><td class="rate">$8.16</td><td class="mk">INR 52,000/mo</td></tr>
+          <tr><td class="first">L3 · Senior support engineer / SME</td><td class="rate">$16.32</td><td class="rate">$2,404</td><td class="rate">$15.07</td><td class="rate">$14.44</td><td class="mk">INR 92,000/mo</td></tr>
+          <tr><td class="first">TL · Team leader / operations lead</td><td class="rate">$22.18</td><td class="rate">$3,267</td><td class="rate">$20.47</td><td class="rate">$19.62</td><td class="mk">INR 125,000/mo</td></tr>
+
+          <tr class="hl"><td colspan="6" class="rowhead">South Africa — Johannesburg</td></tr>
+          <tr><td class="first">L1 · Service desk / process associate</td><td class="rate">$8.21</td><td class="rate">$1,209</td><td class="rate">$7.58</td><td class="rate">$7.26</td><td class="mk">ZAR 11,000/mo</td></tr>
+          <tr><td class="first">L2 · Technical support engineer</td><td class="rate">$15.68</td><td class="rate">$2,310</td><td class="rate">$14.47</td><td class="rate">$13.87</td><td class="mk">ZAR 21,000/mo</td></tr>
+          <tr><td class="first">L3 · Senior support engineer / SME</td><td class="rate">$26.87</td><td class="rate">$3,958</td><td class="rate">$24.81</td><td class="rate">$23.77</td><td class="mk">ZAR 36,000/mo</td></tr>
+          <tr><td class="first">TL · Team leader / operations lead</td><td class="rate">$22.39</td><td class="rate">$3,298</td><td class="rate">$20.67</td><td class="rate">$19.81</td><td class="mk">ZAR 30,000/mo</td></tr>
+
+          <tr class="hl"><td colspan="6" class="rowhead">Malaysia — Kuala Lumpur</td></tr>
+          <tr><td class="first">L1 · Service desk / process associate</td><td class="rate">$11.70</td><td class="rate">$1,723</td><td class="rate">$10.80</td><td class="rate">$10.35</td><td class="mk">MYR 3,400/mo</td></tr>
+          <tr><td class="first">L2 · Technical support engineer</td><td class="rate">$19.27</td><td class="rate">$2,838</td><td class="rate">$17.79</td><td class="rate">$17.05</td><td class="mk">MYR 5,600/mo</td></tr>
+          <tr><td class="first">L3 · Senior support engineer / SME</td><td class="rate">$30.98</td><td class="rate">$4,563</td><td class="rate">$28.59</td><td class="rate">$27.40</td><td class="mk">MYR 9,000/mo</td></tr>
+          <tr><td class="first">TL · Team leader / operations lead</td><td class="rate">$41.30</td><td class="rate">$6,084</td><td class="rate">$38.13</td><td class="rate">$36.54</td><td class="mk">MYR 12,000/mo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="honest reveal">
+      <h4>Why South Africa and Malaysia cost more than India, and when to pay it</h4>
+      <p>South Africa runs UTC+2 with no daylight saving, giving six or more hours of live overlap with a European working day and nobody on a night shift. Malaysia runs UTC+8, matching Singapore, Hong Kong and Perth, with English, Bahasa, Mandarin and Tamil coverage. If your scope is asynchronous and English-only, India is cheaper and deeper and we will tell you so. If your users need someone reachable during their own afternoon, the difference buys exactly that.</p>
+    </div>
+
+    <p class="subhead">Onshore staff augmentation — USA, UK and UAE</p>
+    <p class="intro" style="margin-bottom:22px">Here you run the desk and we place the people into it. There is no Anicalls facility, tooling or supervision layer in the price, so the build is contractor pay rate plus employment burden plus 12% delivery overhead, then margin. That is why these rates are structured differently from the offshore table above.</p>
+
+    <div class="tbl-wrap reveal">
+      <table>
+        <thead><tr>
+          <th class="first" scope="col">Role band</th>
+          <th class="rate" scope="col">Standard</th>
+          <th class="rate" scope="col">Volume +20%</th>
+          <th class="rate" scope="col">Bundle +15%</th>
+          <th scope="col">Live market band</th>
+        </tr></thead>
+        <tbody>
+          <tr class="hl"><td colspan="5" class="rowhead">United States — USD per hour</td></tr>
+          <tr><td class="first">Tier 1 help desk</td><td class="rate">$41.23</td><td class="rate">$38.06</td><td class="rate">$36.48</td><td class="mk">$30–45/hr</td></tr>
+          <tr><td class="first">Tier 2 help desk</td><td class="rate">$49.82</td><td class="rate">$45.99</td><td class="rate">$44.08</td><td class="mk">$40–60/hr</td></tr>
+          <tr><td class="first">Tier 3 / escalation</td><td class="rate">$60.13</td><td class="rate">$55.51</td><td class="rate">$53.19</td><td class="mk">$55–75/hr</td></tr>
+          <tr><td class="first">Team leader</td><td class="rate">$70.44</td><td class="rate">$65.02</td><td class="rate">$62.31</td><td class="mk">$65–90/hr</td></tr>
+
+          <tr class="hl"><td colspan="5" class="rowhead">United Kingdom — GBP per day</td></tr>
+          <tr><td class="first">1st line service desk</td><td class="rate">£201</td><td class="rate">£185</td><td class="rate">£178</td><td class="mk">£140–200/day</td></tr>
+          <tr><td class="first">1st / 2nd line support</td><td class="rate">£255</td><td class="rate">£235</td><td class="rate">£225</td><td class="mk">£150–263/day</td></tr>
+          <tr><td class="first">2nd / 3rd line analyst</td><td class="rate">£348</td><td class="rate">£322</td><td class="rate">£308</td><td class="mk">£250–400/day</td></tr>
+          <tr><td class="first">Service desk team leader</td><td class="rate">£415</td><td class="rate">£383</td><td class="rate">£367</td><td class="mk">£300–500/day</td></tr>
+
+          <tr class="hl"><td colspan="5" class="rowhead">United Arab Emirates — AED per month</td></tr>
+          <tr><td class="first">L1 deskside support</td><td class="rate">AED 6,696</td><td class="rate">AED 6,181</td><td class="rate">AED 5,922</td><td class="mk">AED 3,800–5,200 salary</td></tr>
+          <tr><td class="first">L2 IT support engineer</td><td class="rate">AED 10,884</td><td class="rate">AED 10,047</td><td class="rate">AED 9,626</td><td class="mk">AED 4,050–7,800 salary</td></tr>
+          <tr><td class="first">L3 technical support engineer</td><td class="rate">AED 15,906</td><td class="rate">AED 14,682</td><td class="rate">AED 14,065</td><td class="mk">AED 7,100–12,000 salary</td></tr>
+          <tr><td class="first">Team leader</td><td class="rate">AED 21,768</td><td class="rate">AED 20,094</td><td class="rate">AED 19,251</td><td class="mk">AED 11,000–16,000 salary</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="honest reveal">
+      <h4>An honest word about the onshore rates</h4>
+      <p>UK contract IT day rates fell year on year through 2026, and our onshore rates reflect that market rather than the one before it. But onshore ITES is thin for every supplier including us, and there is very little room left in these numbers. If your budget sits below them, the answer is not a cheaper onshore contractor — it is moving the queue offshore. We will show you which tickets can move and which genuinely cannot.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUNDLES ============ -->
+<section id="bundles" style="background:var(--graphite)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Bundle options</div>
+      <h2>Five ways to buy a working desk, priced end to end</h2>
+      <p class="intro">Each bundle is a complete, staffed service with the team leader, quality function and tooling already inside the price. Role mixes are a starting point and we will reshape them around your ticket volume and coverage hours.</p>
+    </div>
+
+    <article class="bundle reveal">
+      <div class="b-top">
+        <h3 class="b-name">Pilot Desk</h3>
+        <span class="b-tag">4 FTE</span><span class="b-tag">India</span><span class="b-tag">+45% margin</span><span class="b-tag">3-month minimum</span>
+        <span class="b-price"><strong>$6,792</strong><small>per month · $1,698 per FTE</small></span>
+      </div>
+      <p>Prove the model before you commit to it. A small, complete desk with real supervision rather than four people and a spreadsheet. Converts into any bundle below with no repricing event and no re-recruitment.</p>
+      <div class="b-mix"><span class="chip">1 × Team leader</span><span class="chip">1 × L2</span><span class="chip">2 × L1</span></div>
+      <p class="note">Annual contract value $81,499 · 8×5 coverage</p>
+    </article>
+
+    <article class="bundle feature reveal">
+      <div class="b-top">
+        <h3 class="b-name">Core Service Desk</h3>
+        <span class="b-tag on">9 FTE</span><span class="b-tag">India</span><span class="b-tag">+30% margin</span><span class="b-tag">6-month minimum</span>
+        <span class="b-price"><strong>$10,375</strong><small>per month · $1,153 per FTE</small></span>
+      </div>
+      <p>The most common starting point. A full 8×5 desk covering incident, request and access management for roughly 800 to 1,200 tickets a month, with a named team leader and monthly SLA reporting.</p>
+      <div class="b-mix"><span class="chip">1 × Team leader</span><span class="chip">2 × L2</span><span class="chip">6 × L1</span></div>
+      <p class="note">Annual contract value $124,497 · 8×5 coverage</p>
+    </article>
+
+    <article class="bundle reveal">
+      <div class="b-top">
+        <h3 class="b-name">Extended Desk</h3>
+        <span class="b-tag">19 FTE</span><span class="b-tag">India</span><span class="b-tag">+30% margin</span><span class="b-tag">12-month minimum</span>
+        <span class="b-price"><strong>$23,154</strong><small>per month · $1,219 per FTE</small></span>
+      </div>
+      <p>24×5 coverage across three shifts with an L3 escalation layer, for organisations whose users span more than one continent but who do not need weekends staffed.</p>
+      <div class="b-mix"><span class="chip">2 × Team leader</span><span class="chip">1 × L3</span><span class="chip">4 × L2</span><span class="chip">12 × L1</span></div>
+      <p class="note">Annual contract value $277,846 · 24×5 coverage</p>
+    </article>
+
+    <article class="bundle feature reveal">
+      <div class="b-top">
+        <h3 class="b-name">Follow-the-Sun Desk</h3>
+        <span class="b-tag on">28 FTE</span><span class="b-tag on">India + South Africa</span><span class="b-tag">+20% margin</span><span class="b-tag">12-month minimum</span>
+        <span class="b-price"><strong>$36,758</strong><small>per month · $1,313 per FTE</small></span>
+      </div>
+      <p>True 24×7 with no night shift anywhere. South Africa carries the European and UK working day, India carries the rest. Two delivery countries on one contract, one SLA, one invoice, and nobody working at three in the morning to make it happen.</p>
+      <div class="b-mix"><span class="chip">India: 2 TL · 2 L3 · 6 L2 · 12 L1</span><span class="chip">South Africa: 1 TL · 2 L2 · 3 L1</span></div>
+      <p class="note">Annual contract value $441,099 · 24×7 coverage · qualifies for the volume tier</p>
+    </article>
+
+    <article class="bundle reveal">
+      <div class="b-top">
+        <h3 class="b-name">Enterprise Multi-Tower</h3>
+        <span class="b-tag">67 FTE</span><span class="b-tag">India + South Africa</span><span class="b-tag">+15% margin</span><span class="b-tag">24-month minimum</span>
+        <span class="b-price"><strong>$81,592</strong><small>per month · $1,218 per FTE</small></span>
+      </div>
+      <p>Service desk, finance and accounting operations and data operations under one contract and one governance model. Our lowest margin, available because the delivery, quality and workforce management functions are shared across all three towers.</p>
+      <div class="b-mix"><span class="chip">India: 5 TL · 6 L3 · 18 L2 · 30 L1</span><span class="chip">South Africa: 1 TL · 3 L2 · 4 L1</span></div>
+      <p class="note">Annual contract value $979,109 · 24×7 coverage · three service towers</p>
+    </article>
+
+    <div class="callout reveal">
+      <h4>What is inside every bundle price</h4>
+      <p>Team leadership and supervision · quality assurance and call or ticket sampling · workforce management and rostering · recruitment and onboarding · training and knowledge base build · leave and shrinkage cover · workspace and IT · ITSM and telephony licences · monthly SLA reporting · a named account contact.</p>
+      <p><strong style="color:var(--text)">Not included:</strong> your ITSM platform licences if you insist on your own, third-party software the desk must operate, and travel where onsite presence is requested. All quoted separately and at cost.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDIA BOT ============ -->
+<section class="light" id="bot">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Flexible BOT · India</div>
+      <h2>Build it with us. Own it when you are ready.</h2>
+      <p class="intro">Global brands are moving operational capability back to India, and most of them do not want a managed service forever — they want their own centre without spending eighteen months and several hundred thousand dollars building one. This is the version of Build-Operate-Transfer designed for that, sized for IT-enabled services rather than for a five-hundred-seat engineering centre.</p>
+    </div>
+
+    <div class="tbl-wrap reveal">
+      <table>
+        <caption>Flexible BOT fee schedule — India, IT-enabled services role mix</caption>
+        <thead><tr><th class="first" scope="col">Fee</th><th class="rate" scope="col">Amount</th><th scope="col">Basis</th></tr></thead>
+        <tbody>
+          <tr><td class="first">Basic onboarding</td><td class="rate">$850 per FTE</td><td>One-time. Background verification, contracting, IT and access provisioning, induction, ITSM onboarding, first-week supervision.</td></tr>
+          <tr><td class="first">Centre setup and design</td><td class="rate">$9,500</td><td>One-time. <strong style="color:var(--blue)">Waived at 15+ FTE on a 12-month commitment.</strong> Entity advisory, location, workspace and IT design, governance model, compensation benchmarking.</td></tr>
+          <tr><td class="first">Recruitment — under 10 hires</td><td class="rate">6.0%</td><td>Of annual CTC, per hire</td></tr>
+          <tr><td class="first">Recruitment — 10 to 24 hires</td><td class="rate">5.0%</td><td>Of annual CTC, per hire</td></tr>
+          <tr><td class="first">Recruitment — 25+ hires</td><td class="rate">4.0%</td><td>Of annual CTC, per hire</td></tr>
+          <tr><td class="first">Operate fee — 6 to 15 FTE</td><td class="rate">12%</td><td>Of monthly payroll under management</td></tr>
+          <tr><td class="first">Operate fee — 16 to 40 FTE</td><td class="rate">9%</td><td>Of monthly payroll under management</td></tr>
+          <tr><td class="first">Operate fee — 41+ FTE</td><td class="rate">7%</td><td>Of monthly payroll under management</td></tr>
+          <tr><td class="first">Payroll, HR and statutory compliance</td><td class="rate">$99 per FTE</td><td>Per month</td></tr>
+          <tr><td class="first">Workspace</td><td class="rate">$195 per seat</td><td>Per month. Reduce or remove for a remote-first centre.</td></tr>
+          <tr><td class="first">IT, device and access</td><td class="rate">$65 per FTE</td><td>Per month, or $1,050 one-time if you prefer capex</td></tr>
+          <tr class="hl"><td class="first">Transfer fee</td><td class="rate">5.0%</td><td>Of annual payroll at transfer. Floor $12,000, cap $75,000. <strong style="color:var(--blue)">Fixed in the contract on the day you sign.</strong></td></tr>
+          <tr><td class="first">Replacement guarantee</td><td class="rate">Included</td><td>Free replacement within 90 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="subhead">What "flexible" actually means here</p>
+    <div class="tiers reveal">
+      <div class="tier"><p class="tier-n">Minimum</p><p class="tier-m">6</p><p class="tier-s">FTE to start</p><p>Most BOT providers will not engage below twenty-five. We will start a centre at six people and grow it with you.</p></div>
+      <div class="tier"><p class="tier-n">Transfer from</p><p class="tier-m">Month 6</p><p class="tier-s">no lock-in beyond that</p><p>Take ownership whenever you are ready from month six onward. No penalty for transferring early and no penalty for never transferring.</p></div>
+      <div class="tier"><p class="tier-n">Scale</p><p class="tier-m">±25%</p><p class="tier-s">month to month</p><p>Flex headcount either way within a 25% band without renegotiating. You commit to the floor, not the peak.</p></div>
+      <div class="tier"><p class="tier-n">Build time</p><p class="tier-m">90</p><p class="tier-s">days to live</p><p>From signature to a staffed, trained and operating centre, using our existing Hyderabad infrastructure rather than building yours from nothing.</p></div>
+    </div>
+
+    <p class="subhead">Worked examples — ITES role mix at INR 52,000 average monthly salary</p>
+    <p class="scroll-hint">Scroll table →</p>
+    <div class="tbl-wrap reveal">
+      <table>
+        <thead><tr>
+          <th class="first" scope="col">Line</th>
+          <th class="rate" scope="col">8 FTE</th><th class="rate" scope="col">20 FTE</th><th class="rate" scope="col">45 FTE</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="first">Monthly payroll under management</td><td class="rate">$5,767</td><td class="rate">$14,418</td><td class="rate">$32,441</td></tr>
+          <tr><td class="first">Operate fee</td><td class="rate">$692 <span style="color:var(--faint);font-weight:400">(12%)</span></td><td class="rate">$1,298 <span style="color:var(--faint);font-weight:400">(9%)</span></td><td class="rate">$2,271 <span style="color:var(--faint);font-weight:400">(7%)</span></td></tr>
+          <tr><td class="first">Payroll and compliance</td><td class="rate">$792</td><td class="rate">$1,980</td><td class="rate">$4,455</td></tr>
+          <tr><td class="first">Workspace</td><td class="rate">$1,560</td><td class="rate">$3,900</td><td class="rate">$8,775</td></tr>
+          <tr><td class="first">IT and access</td><td class="rate">$520</td><td class="rate">$1,300</td><td class="rate">$2,925</td></tr>
+          <tr class="hl"><td class="first">Total monthly</td><td class="rate">$9,331</td><td class="rate">$22,896</td><td class="rate">$50,867</td></tr>
+          <tr class="hl"><td class="first">Cost per FTE per month</td><td class="rate" style="color:var(--blue)">$1,166</td><td class="rate" style="color:var(--blue)">$1,145</td><td class="rate" style="color:var(--blue)">$1,130</td></tr>
+          <tr><td class="first">One-time: setup</td><td class="rate">$9,500</td><td class="rate">Waived</td><td class="rate">Waived</td></tr>
+          <tr><td class="first">One-time: onboarding @ $850</td><td class="rate">$6,800</td><td class="rate">$17,000</td><td class="rate">$38,250</td></tr>
+          <tr><td class="first">One-time: recruitment</td><td class="rate">$4,152 <span style="color:var(--faint);font-weight:400">(6%)</span></td><td class="rate">$8,651 <span style="color:var(--faint);font-weight:400">(5%)</span></td><td class="rate">$15,572 <span style="color:var(--faint);font-weight:400">(4%)</span></td></tr>
+          <tr><td class="first">Transfer fee, when you take ownership</td><td class="rate">$12,000</td><td class="rate">$12,000</td><td class="rate">$19,465</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout reveal">
+      <h4>Compare that to building it yourself</h4>
+      <p>A self-built captive centre in India typically costs $150,000 to $400,000 in setup alone, plus six to nine months of elapsed time before the first ticket is answered. Our 20-FTE centre goes live in 90 days for $25,651 in one-time fees, and the price to take it off us is written down before you start.</p>
+      <p>We will also tell you the uncomfortable part: a mature captive you run yourself is cheaper than any managed model from year three onward. That is exactly why we contract to hand it to you rather than to keep it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section id="why" style="background:var(--graphite)">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">The honest case</div>
+      <h2>Why this pricing, and where it does not suit you</h2>
+
+      <h3>What you get for the margin</h3>
+      <p class="intro" style="margin-bottom:26px">Cost-plus only works if you trust the cost. Ours is built from published market salary data, refreshed quarterly, and we will show you the source for any line in the table on request. If the market moves down, your rate moves down at the next review. That cuts both ways and we have written it that way deliberately.</p>
+    </div>
+
+    <div class="callout reveal">
+      <h4>Four things that come with the rate</h4>
+      <p><strong style="color:var(--text)">One contract across six countries.</strong> Most organisations solving a multi-country support problem end up with a vendor per market and nobody accountable for the outcome. · <strong style="color:var(--text)">A published transfer price on every BOT.</strong> Named at signature, not negotiated when you want to leave. · <strong style="color:var(--text)">Local-content compliance where it matters.</strong> B-BBEE Level 2 in South Africa, Emiratisation-eligible placements in the UAE, Bumiputera participation in Malaysia. · <strong style="color:var(--text)">Governed AI inside the desk.</strong> Deflection and triage run through Agent OS with a named human reviewing consequential output, which is what lets us hold these rates as volumes grow.</p>
+    </div>
+
+    <div class="honest reveal">
+      <h4>Where we are not the right answer</h4>
+      <p>If you want the single cheapest quote for a small offshore desk, a single-country regional provider will beat us — they carry one entity and one overhead, and we carry six. If you need specialist enterprise consulting rather than IT-enabled services, this page is the wrong rate card and the right one costs several times more. And if you need a globally recognised brand on the cover of a board paper, we are not that either, though we are frequently the delivery partner underneath one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Straight answers</div>
+      <h2>Questions before the first call</h2>
+    </div>
+
+    <div class="drawers" style="margin-top:44px">
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">Where does the "median market salary" come from?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">Live job-board postings and salary-survey data for each role in each city, refreshed quarterly. We take the median of the current advertised range rather than the average, because averages in this market are pulled upward by a small number of outliers. We will show you the source for any line on request.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">What happens if market salaries fall?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">Your rate falls at the next quarterly review. The formula runs in both directions, which is the point of publishing it. Note that contracted multi-year rates still carry an annual escalator of local CPI plus 2%, or 4%, whichever is greater — wage inflation in these markets is currently moderate and will not stay that way.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">Can I get the 15% bundle margin on a small team?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">No. At 15% margin on delivered cost the contract does not cover the cost of winning and running it unless it is spread across sixty or more people. We would rather decline than run your service at a loss, because a supplier losing money on your account is your problem before it is ours.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">Why is a Malaysian agent more expensive than an Indian one?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">Salaries are higher and the market is smaller. What you buy for the difference is a working day that matches Singapore, Hong Kong and Sydney, plus Bahasa, Mandarin and Tamil coverage. If your scope is asynchronous and English-only, India is the better answer and we will say so.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">Do these rates apply to SAP, Oracle or cybersecurity roles?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">No. Those are specialist roles priced on scarcity, not cost-plus, and they sit on a separate rate card at several times these levels. Asking for an S/4HANA architect at the L3 rate on this page would get you someone who is not an S/4HANA architect.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">What is the smallest engagement you will take?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">Four people on the Pilot tier for three months, or six people for a flexible BOT centre. Below that the setup and account cost outweighs the contract and neither of us benefits.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">Can we mix delivery countries?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">Yes, and for round-the-clock coverage you should. The Follow-the-Sun bundle runs South Africa for European hours and India for the rest, which gives genuine 24×7 without putting anyone on a permanent night shift. Two or more delivery countries on one contract counts toward the bundle tier.</div></div>
+      </details>
+      <details class="drawer reveal">
+        <summary><div class="d-ic">?</div><div class="d-nm">What currency will you invoice in?</div><span class="d-tg">+</span></summary>
+        <div class="d-body"><div class="rw2">USD, GBP, ZAR, AED, MYR or INR. Where we quote outside the delivery country's currency, rates are fixed within a ±5% movement in the cross-rate.</div></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final" id="next">
+  <div class="wrap">
+    <div class="center reveal">
+      <div class="eyebrow no-line">Next step</div>
+      <h2>Send us your ticket volumes and we will size the desk</h2>
+      <p class="lede">Monthly ticket count, coverage hours, current cost, and the languages you need. We will come back with a staffed model, a rate at the correct tier, and an honest view on whether moving it offshore is right for the scope you have.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="contact.html">Book a sizing conversation <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="managed-operations.html">See the service lines</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:40px 0">
+  <div class="wrap">
+    <p class="note" style="max-width:80ch;font-size:12px;line-height:1.75">All figures are indicative and exclusive of applicable taxes. Rates are built from median market salary data refreshed quarterly and are subject to a quarterly review in both directions. Multi-year contracts carry an annual escalator of the greater of local CPI plus 2%, or 4%. Volume and bundle margins are available only at the stated minimum headcount and term. Final pricing depends on role mix, coverage hours, language requirements, delivery location, committed volume and term. Nothing on this page constitutes an offer capable of acceptance. <strong style="color:var(--text)">Last reviewed:</strong> August 2026. Rates are refreshed quarterly against current market salary and FX reference data.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+        <p style="font-size:13.5px;color:var(--faint);margin-top:16px;max-width:300px">AI employees, niche global IT talent, GCC build-outs and managed operations, one accountable partner across six countries.</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="ai-workforce.html">AI Workforce</a>
+        <a href="agent-os.html">Agent OS™</a>
+        <a href="talent.html">Global IT Talent</a>
+        <a href="gcc.html">GCC &amp; BOT</a>
+        <a href="managed-operations.html">Managed Operations</a>
+      </div>
+      <div>
+        <h5>Decide</h5>
+        <a href="solutions.html">Solutions &amp; ROI</a>
+        <a href="solutions.html#calculator">Cost Advantage Calculator</a>
+        <a href="gcc.html#bot-calculator">GCC BOT Calculator</a>
+        <a href="solutions.html#compare">Model Comparisons</a>
+        <a href="case-studies.html">Case Studies</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Anicalls</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Anicalls (Pty) Ltd. All rights reserved.</span>
+      <span>Compliance-first · Human-in-the-loop AI · GDPR-aware · POPIA-aware</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'))}
+
+const navEl=document.querySelector('nav');
+if(navEl){
+  const onScroll=()=>navEl.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+}
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('pointerdown',e=>{
+    const r=btn.getBoundingClientRect();
+    const s=document.createElement('span');
+    s.className='rip';
+    const size=Math.max(r.width,r.height)*1.4;
+    s.style.width=s.style.height=size+'px';
+    s.style.left=(e.clientX-r.left-size/2)+'px';
+    s.style.top=(e.clientY-r.top-size/2)+'px';
+    btn.appendChild(s);
+    s.addEventListener('animationend',()=>s.remove());
+  });
+});
+</script>
+<script src="assests/js/login-modal.js?v=3"></script>
+<script src="assests/js/booking.js?v=3"></script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Where does the median market salary come from?","acceptedAnswer":{"@type":"Answer","text":"Live job-board postings and salary-survey data for each role in each city, refreshed quarterly. Anicalls uses the median of the current advertised range rather than the average."}},
+{"@type":"Question","name":"What happens if market salaries fall?","acceptedAnswer":{"@type":"Answer","text":"The rate falls at the next quarterly review. The cost-plus formula runs in both directions."}},
+{"@type":"Question","name":"Do these rates apply to SAP, Oracle or cybersecurity roles?","acceptedAnswer":{"@type":"Answer","text":"No. Specialist enterprise roles are priced on scarcity rather than cost-plus and sit on a separate rate card at several times these levels."}},
+{"@type":"Question","name":"What is the smallest engagement Anicalls will take?","acceptedAnswer":{"@type":"Answer","text":"Four people on the Pilot tier for three months, or six people for a flexible Build-Operate-Transfer centre in India."}},
+{"@type":"Question","name":"Can we mix delivery countries?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Follow-the-Sun bundle runs South Africa for European hours and India for the rest, giving 24x7 coverage without a permanent night shift."}}]}
+</script>
+</body>
+</html>

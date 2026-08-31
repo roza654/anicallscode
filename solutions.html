@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workforce Strategy, ROI Calculators & Model Comparisons | Anicalls</title>
+<meta name="description" content="Interactive cost-advantage and AI + human productivity calculators, plus side-by-side comparisons of traditional staffing, AI-only tools and the Anicalls blended workforce model.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-icon-home" aria-label="Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></a>
+      <a href="ai-workforce.html">AI Workforce</a>
+      <a href="talent.html">IT Talent</a>
+      <a href="anicalls-careers.html">Careers</a>
+      <a href="gcc.html">GCC &amp; BOT</a>
+      <a href="managed-operations.html">Managed Ops</a>
+      <a href="anicalls-pricing-ites.html">Pricing</a>
+      <a href="agent-os.html">Agent OS™</a>
+      <a href="solutions.html" class="active">Solutions &amp; ROI</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="index.html#contact" data-booking="Executive Briefing" aria-label="Book a Consultation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></a>
+      <button class="menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero hero-fullscreen">
+  <div class="hero-media" aria-hidden="true">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" onerror="this.parentElement.classList.add('video-failed')">
+      <source src="assests/solution-roi.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="wrap reveal page-hero-content" data-dir="left">
+    <div class="crumb"><a href="index.html">Home</a><i>/</i>Workforce Strategy &amp; ROI</div>
+    <h1>Decide with numbers, <br><span class="accent">not slideware</span></h1>
+    <p class="sub">Two interactive models and three honest comparisons. Estimate your T&amp;M cost advantage, model AI + human productivity gains, then compare operating models side by side. For GCC Build-Operate-Transfer economics, use the dedicated <a href="gcc.html#bot-calculator">BOT calculator</a>.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#calculator">Run the Calculators <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#compare">See Model Comparisons</a>
+    </div>
+  </div>
+</header>
+
+<section class="calc-band" id="calculator">
+  <div class="wrap">
+    <div class="center reveal">
+      <div class="eyebrow gold no-line">Interactive Models</div>
+      <h2>T&amp;M Cost Advantage <span class="accent">Calculator</span></h2>
+      <p class="lede">Compare fully-loaded onsite cost against the Anicalls offshore model for the same team.</p>
+    </div>
+    <div class="calc-shell reveal">
+<div class="calc-panel on" id="cp0">
+        <div class="calc-inputs">
+          <h4>Engagement Inputs</h4>
+          <div class="field"><label>Number of resources <output id="tm_res_o">5</output></label><input type="range" id="tm_res" min="1" max="100" value="5" oninput="tmCalc()"></div>
+          <div class="field"><label>Onsite hourly billing rate (USD) <output id="tm_rate_o">$100</output></label><input type="range" id="tm_rate" min="40" max="250" step="5" value="100" oninput="tmCalc()"></div>
+          <div class="field"><label>Offshore / nearshore price advantage <output id="tm_disc_o">30%</output></label><input type="range" id="tm_disc" min="10" max="60" value="30" oninput="tmCalc()"></div>
+          <div class="field"><label>Monthly working hours per resource <output id="tm_hrs_o">160</output></label><input type="range" id="tm_hrs" min="120" max="200" step="4" value="160" oninput="tmCalc()"></div>
+          <div class="field"><label>Engagement duration (months) <output id="tm_dur_o">12</output></label><input type="range" id="tm_dur" min="3" max="36" value="12" oninput="tmCalc()"></div>
+          <div class="f2">
+            <div class="field"><label>Skill category</label><select id="tm_skill" onchange="tmCalc()"><option>Enterprise Applications (SAP / Oracle / MS)</option><option>Salesforce / ServiceNow / Workday</option><option>Cloud, Infrastructure &amp; DevOps</option><option>Data, Analytics &amp; AI</option><option>Cybersecurity, Risk &amp; Compliance</option><option>Automation, RPA &amp; Agentic Workflows</option><option>Software Engineering &amp; Product</option><option>HR, Finance &amp; Business Operations</option></select></div>
+            <div class="field"><label>Seniority level</label><select id="tm_sen" onchange="tmCalc()"><option>Mixed team</option><option>Junior (1–3 yrs)</option><option>Mid-level (4–7 yrs)</option><option>Senior (8–12 yrs)</option><option>Architect / Lead (12+ yrs)</option></select></div>
+          </div>
+          <div class="f2">
+            <div class="field"><label>Delivery location</label><select id="tm_loc" onchange="tmCalc()"><option>India (offshore)</option><option>South Africa</option><option>UAE</option><option>UK</option><option>USA</option><option>Malaysia</option><option>Nearshore</option><option>Hybrid</option></select></div>
+            <div class="field"><label>Delivery model</label><select id="tm_model" onchange="tmCalc()"><option>Offshore / Nearshore T&amp;M</option><option>Hybrid delivery</option><option>Managed AI + Human</option></select></div>
+          </div>
+        </div>
+        <div class="calc-out">
+          <h4>Cost-to-Capability View</h4>
+          <div class="out-hero">
+            <div class="oh-label">Estimated monthly cost-to-capability advantage</div>
+            <div class="oh-val" id="tm_adv">$24,000<small id="tm_pct">30%</small></div>
+          </div>
+          <div class="out-grid">
+            <div class="ocell"><div class="ol">Onsite monthly cost</div><div class="ov" id="tm_on">$80,000</div></div>
+            <div class="ocell"><div class="ol">Offshore / nearshore monthly cost</div><div class="ov" id="tm_off">$56,000</div></div>
+            <div class="ocell"><div class="ol">Effective blended hourly rate</div><div class="ov" id="tm_eff">$70/hr</div></div>
+            <div class="ocell"><div class="ol">Advantage over engagement</div><div class="ov pos" id="tm_tot">$288,000</div></div>
+          </div>
+          <div class="calc-msg" id="tm_msg">Estimated monthly cost-to-capability advantage: <b>USD 24,000</b>, while retaining access to vetted skills, compliance support, delivery governance and Anicalls-managed onboarding.</div>
+          <div class="calc-ctas">
+            <a href="index.html#contact" class="btn btn-primary btn-sm">Request Detailed Proposal</a>
+            <a href="#contact" class="btn btn-ghost btn-sm">Book Cost Optimisation Consultation</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: GCC BOT -->
+    </div>
+
+    <div class="center reveal" style="margin-top:80px">
+      <h2>AI + Human <span class="accent">Productivity Model</span></h2>
+      <p class="lede">Estimate the capacity gain of augmenting your existing team with governed AI employees.</p>
+    </div>
+    <div class="calc-shell reveal">
+<div class="calc-panel on" id="cp2">
+        <div class="calc-inputs">
+          <h4>Process &amp; Workforce Inputs</h4>
+          <div class="field"><label>Number of human resources in process <output id="ah_res_o">20</output></label><input type="range" id="ah_res" min="2" max="200" value="20" oninput="ahCalc()"></div>
+          <div class="field"><label>Average monthly cost per resource (USD) <output id="ah_cost_o">$4,000</output></label><input type="range" id="ah_cost" min="1000" max="15000" step="250" value="4000" oninput="ahCalc()"></div>
+          <div class="field"><label>AI employees required <output id="ah_ai_o">4</output></label><input type="range" id="ah_ai" min="1" max="50" value="4" oninput="ahCalc()"></div>
+          <div class="field"><label>Expected productivity improvement <output id="ah_prod_o">15%</output></label><input type="range" id="ah_prod" min="5" max="45" value="15" oninput="ahCalc()"></div>
+          <div class="f2">
+            <div class="field"><label>Monthly AI employee subscription (USD)</label><input type="number" id="ah_sub" value="1500" min="200" step="100" oninput="ahCalc()"></div>
+            <div class="field"><label>Monthly governance cost (USD)</label><input type="number" id="ah_gov" value="2000" min="0" step="250" oninput="ahCalc()"></div>
+          </div>
+          <div class="f2">
+            <div class="field"><label>Business process area</label><select id="ah_area" onchange="ahCalc()"><option>Recruitment operations</option><option>HR operations</option><option>Finance &amp; accounting</option><option>Customer support</option><option>Sales development</option><option>IT service desk</option><option>Procurement</option><option>Compliance operations</option><option>Data operations</option></select></div>
+            <div class="field"><label>Human review requirement</label><select id="ah_rev"><option>High: approval on all outputs</option><option selected>Standard: approval on exceptions &amp; client-facing</option><option>Light: sampling and audit review</option></select></div>
+          </div>
+        </div>
+        <div class="calc-out">
+          <h4>Productivity Value View</h4>
+          <div class="out-hero">
+            <div class="oh-label">Estimated monthly productivity value</div>
+            <div class="oh-val" id="ah_gain">$0<small id="ah_annual">$0 / year</small></div>
+          </div>
+          <div class="out-grid">
+            <div class="ocell"><div class="ol">Current monthly process cost</div><div class="ov" id="ah_cur">$0</div></div>
+            <div class="ocell"><div class="ol">AI-enabled workforce cost</div><div class="ov" id="ah_new">$0</div></div>
+            <div class="ocell"><div class="ol">Human effort redeployed (FTE equiv.)</div><div class="ov" id="ah_fte">0</div></div>
+            <div class="ocell"><div class="ol">Suggested AI employees</div><div class="ov" style="font-size:13px;line-height:1.5;font-family:var(--font-body);font-weight:500" id="ah_sugg"></div></div>
+          </div>
+          <div class="calc-msg">Anicalls does not replace enterprise teams blindly. We redesign workflows so AI employees handle repeatable work while human experts retain judgement, oversight, exception handling and business accountability.</div>
+          <div class="calc-ctas">
+            <a href="index.html#contact" class="btn btn-primary btn-sm">Request AI Workforce Assessment</a>
+            <a href="#ai-workforce" class="btn btn-ghost btn-sm">Explore AI Employees</a>
+          </div>
+        </div>
+      </div>
+      <div class="disclaimer">
+        Calculator outputs are indicative estimates only. Final pricing depends on role complexity, skill rarity, location, compliance requirements, engagement duration, client operating model and scope of Anicalls responsibilities.<br><br>
+        Anicalls positions cost advantage as part of a broader enterprise value model that includes skill access, compliance, governance, productivity, delivery continuity and long-term capability ownership.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI WORKFORCE READINESS ASSESSMENT ============ -->
+<section id="readiness">
+  <div class="wrap">
+    <div class="center reveal">
+      <div class="eyebrow gold no-line">Self-Assessment</div>
+      <h2>AI Workforce <span class="accent">Readiness Assessment</span></h2>
+      <p class="lede">Five questions. An honest read on where you sit today, not a sales pitch.</p>
+    </div>
+    <div class="quiz-shell reveal">
+      <div class="quiz-q" data-q="1">
+        <p>1. How would you describe your current AI use in day-to-day operations?</p>
+        <div class="quiz-options">
+          <button type="button" class="quiz-opt" data-v="1">No AI in use yet</button>
+          <button type="button" class="quiz-opt" data-v="2">Isolated experiments or pilots</button>
+          <button type="button" class="quiz-opt" data-v="3">A few processes in production</button>
+          <button type="button" class="quiz-opt" data-v="4">Embedded across multiple functions</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="2">
+        <p>2. Do you have a governance model for AI decisions: approval gates, audit trails, access control?</p>
+        <div class="quiz-options">
+          <button type="button" class="quiz-opt" data-v="1">Not yet defined</button>
+          <button type="button" class="quiz-opt" data-v="2">Informal, not documented</button>
+          <button type="button" class="quiz-opt" data-v="3">Documented but not enforced everywhere</button>
+          <button type="button" class="quiz-opt" data-v="4">Enforced and audited</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="3">
+        <p>3. How complete is your workforce process documentation?</p>
+        <div class="quiz-options">
+          <button type="button" class="quiz-opt" data-v="1">Mostly undocumented</button>
+          <button type="button" class="quiz-opt" data-v="2">Documented in parts</button>
+          <button type="button" class="quiz-opt" data-v="3">Well documented for core processes</button>
+          <button type="button" class="quiz-opt" data-v="4">Fully documented and versioned</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="4">
+        <p>4. How ready is leadership to sponsor an AI workforce initiative?</p>
+        <div class="quiz-options">
+          <button type="button" class="quiz-opt" data-v="1">Not yet on the agenda</button>
+          <button type="button" class="quiz-opt" data-v="2">Interested, no budget yet</button>
+          <button type="button" class="quiz-opt" data-v="3">Budget identified</button>
+          <button type="button" class="quiz-opt" data-v="4">Actively sponsored with a mandate</button>
+        </div>
+      </div>
+      <div class="quiz-q" data-q="5">
+        <p>5. What's your experience with offshore or GCC delivery models?</p>
+        <div class="quiz-options">
+          <button type="button" class="quiz-opt" data-v="1">None</button>
+          <button type="button" class="quiz-opt" data-v="2">Using traditional vendors only</button>
+          <button type="button" class="quiz-opt" data-v="3">Considering a dedicated GCC</button>
+          <button type="button" class="quiz-opt" data-v="4">Already operating or transferring a GCC</button>
+        </div>
+      </div>
+      <div class="quiz-result" id="quizResult">
+        <div class="qr-label">Your Readiness Band</div>
+        <div class="qr-band" id="quizBand"></div>
+        <p id="quizText"></p>
+      </div>
+      <div class="calc-ctas" style="margin-top:22px">
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Request an AI Workforce Assessment</a>
+        <a href="ai-workforce.html" class="btn btn-ghost btn-sm">Explore AI Employees</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION 14: COMPARISON TABLES (LIGHT) ============ -->
+<section class="light" id="compare">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow no-line">Model Comparison</div>
+      <h2>Choose the Right Operating Model</h2>
+      <p class="lede">Three honest comparisons to help you decide: staffing vs the Anicalls model, T&amp;M vs GCC BOT, and AI-only automation vs a governed AI + human workforce.</p>
+    </div>
+
+    <h3 class="tbl-title reveal">Traditional staffing vs the Anicalls workforce model</h3>
+    <div class="tbl-wrap reveal"><table>
+      <tr><th style="width:38%">Dimension</th><th>Traditional Staffing</th><th>Anicalls Workforce Model</th></tr>
+      <tr><td>Scope</td><td>Resource supply only</td><td>AI + human workforce model with GCC/BOT options</td></tr>
+      <tr><td>Governance</td><td>Limited governance</td><td>Managed delivery governance, SLAs and client reporting</td></tr>
+      <tr><td>Recruitment</td><td>Manual recruitment cycles</td><td>AI-assisted sourcing with human review and approval gates</td></tr>
+      <tr><td>Vendor landscape</td><td>Disconnected vendors</td><td>One accountable partner across automation, talent and operations</td></tr>
+      <tr><td>Automation</td><td>Limited or none</td><td>AI productivity layer with human oversight</td></tr>
+      <tr><td>Payroll &amp; compliance</td><td>Client's problem</td><td>Payroll and compliance coordination included</td></tr>
+      <tr><td>Horizon</td><td>Short-term fulfilment</td><td>Long-term capability ownership via BOT transfer</td></tr>
+    </table></div>
+
+    <h3 class="tbl-title reveal">T&amp;M vs GCC BOT</h3>
+    <div class="tbl-wrap reveal"><table>
+      <tr><th style="width:38%">Dimension</th><th>T&amp;M Model</th><th>GCC BOT Model</th></tr>
+      <tr><td>Commercial structure</td><td>Hourly billing</td><td>Dedicated team build with transparent operating costs</td></tr>
+      <tr><td>Ownership</td><td>Limited ownership; vendor dependency</td><td>Transfer option after 6 months; long-term client ownership</td></tr>
+      <tr><td>Cost trajectory</td><td>Cost continues as long as vendor engagement continues</td><td>Costs step down after transfer to client payroll</td></tr>
+      <tr><td>Operations</td><td>Vendor-run, opaque</td><td>Anicalls-operated initial period with payroll &amp; compliance support</td></tr>
+      <tr><td>Strategic outcome</td><td>Capacity rented</td><td>A scalable, client-owned capability engine</td></tr>
+    </table></div>
+
+    <h3 class="tbl-title reveal">AI-only automation vs Anicalls AI + human workforce</h3>
+    <div class="tbl-wrap reveal"><table>
+      <tr><th style="width:38%">Dimension</th><th>AI-Only Automation</th><th>Anicalls AI + Human Workforce</th></tr>
+      <tr><td>Judgement</td><td>Automation without domain judgement</td><td>AI productivity with human oversight and domain expertise</td></tr>
+      <tr><td>Risk</td><td>Potential governance risk</td><td>Compliance workflows, approval gates and audit trails</td></tr>
+      <tr><td>Exceptions</td><td>Limited exception handling</td><td>Structured escalation to human specialists</td></tr>
+      <tr><td>Accountability</td><td>Tooling, not outcomes</td><td>Managed outcomes and operational continuity</td></tr>
+    </table></div>
+
+    <h3 class="tbl-title reveal">Anicalls vs other provider types</h3>
+    <div class="tbl-wrap reveal"><table>
+      <tr><th style="width:38%">Dimension</th><th>Big 4 / BPOs / AI Consultancies / Recruitment Platforms</th><th>Anicalls Workforce Model</th></tr>
+      <tr><td>Delivery scope</td><td>Typically one lane: strategy, staffing, automation or operations alone</td><td>AI + human workforce, GCC/BOT, talent and managed operations under one model</td></tr>
+      <tr><td>Accountability</td><td>Often split across multiple vendors for a single outcome</td><td>One accountable partner across the full workforce lifecycle</td></tr>
+      <tr><td>AI deployment</td><td>Either AI-only tooling or advisory-only AI strategy</td><td>Governed AI employees with human-in-the-loop oversight from day one</td></tr>
+      <tr><td>Capability ownership</td><td>Rented capacity for the length of the contract</td><td>A defined path to client-owned capability via BOT transfer</td></tr>
+      <tr><td>Commercial model</td><td>Hourly billing or placement fees</td><td>Transparent cost-to-capability modelling across every engagement type</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>The numbers look right? Pressure-test them.</h2>
+        <p>Book an executive briefing and we'll model your actual roles, rates and volumes: no generic decks.</p>
+      </div>
+      <a class="btn btn-primary" href="index.html#contact">Book an Executive Briefing <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+        <p style="font-size:13.5px;color:var(--faint);margin-top:16px;max-width:300px">AI employees, niche global IT talent, GCC build-outs and managed operations, one accountable partner across six countries.</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="ai-workforce.html">AI Workforce</a>
+        <a href="agent-os.html">Agent OS™</a>
+        <a href="talent.html">Global IT Talent</a>
+        <a href="gcc.html">GCC &amp; BOT</a>
+        <a href="managed-operations.html">Managed Operations</a>
+      </div>
+      <div>
+        <h5>Decide</h5>
+        <a href="solutions.html">Solutions &amp; ROI</a>
+        <a href="solutions.html#calculator">Cost Advantage Calculator</a>
+        <a href="gcc.html#bot-calculator">GCC BOT Calculator</a>
+        <a href="solutions.html#compare">Model Comparisons</a>
+        <a href="case-studies.html">Case Studies</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Anicalls</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Anicalls (Pty) Ltd. All rights reserved.</span>
+      <span>Compliance-first · Human-in-the-loop AI · GDPR-aware · POPIA-aware</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'))}
+
+const navEl=document.querySelector('nav');
+if(navEl){
+  const onScroll=()=>navEl.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+}
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('pointerdown',e=>{
+    const r=btn.getBoundingClientRect();
+    const s=document.createElement('span');
+    s.className='rip';
+    const size=Math.max(r.width,r.height)*1.4;
+    s.style.width=s.style.height=size+'px';
+    s.style.left=(e.clientX-r.left-size/2)+'px';
+    s.style.top=(e.clientY-r.top-size/2)+'px';
+    btn.appendChild(s);
+    s.addEventListener('animationend',()=>s.remove());
+  });
+});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const counters=document.querySelectorAll('[data-count-to]');
+  if(counters.length){
+    const cio=new IntersectionObserver(es=>es.forEach(e=>{
+      if(!e.isIntersecting)return;
+      const el=e.target,target=+el.dataset.countTo,dur=900,t0=performance.now();
+      const step=t=>{
+        const p=Math.min(1,(t-t0)/dur);
+        el.textContent=Math.round(target*(1-Math.pow(1-p,3)));
+        if(p<1)requestAnimationFrame(step);else el.textContent=target;
+      };
+      requestAnimationFrame(step);
+      cio.unobserve(el);
+    }),{threshold:.4});
+    counters.forEach(el=>cio.observe(el));
+  }
+}
+const aiSuggest={
+ 'Recruitment operations':'AI Recruiter, AI Candidate Engagement Agent',
+ 'HR operations':'AI HR Executive, AI Documentation Specialist',
+ 'Finance & accounting':'AI Finance Analyst, AI Accountant',
+ 'Customer support':'AI Customer Support Agent, AI QA Analyst',
+ 'Sales development':'AI SDR, AI Lead Generation Agent',
+ 'IT service desk':'AI IT Service Desk Agent',
+ 'Procurement':'AI Procurement Assistant, AI Vendor Management Agent',
+ 'Compliance operations':'AI Compliance Analyst, AI Documentation Specialist',
+ 'Data operations':'AI Data Analyst, AI Research Analyst'
+};
+function $(id){return document.getElementById(id)}
+function usd(n){return '$'+Math.round(n).toLocaleString('en-US')}
+function tmCalc(){
+  const res=+$('tm_res').value, rate=+$('tm_rate').value, disc=+$('tm_disc').value,
+        hrs=+$('tm_hrs').value, dur=+$('tm_dur').value;
+  $('tm_res_o').textContent=res;
+  $('tm_rate_o').textContent='$'+rate;
+  $('tm_disc_o').textContent=disc+'%';
+  $('tm_hrs_o').textContent=hrs;
+  $('tm_dur_o').textContent=dur;
+  const offRate=rate*(1-disc/100);
+  const onCost=res*rate*hrs;
+  const offCost=res*offRate*hrs;
+  const adv=onCost-offCost;
+  const pct=onCost?adv/onCost*100:0;
+  $('tm_on').textContent=usd(onCost);
+  $('tm_off').textContent=usd(offCost);
+  $('tm_eff').textContent='$'+Math.round(offRate)+'/hr';
+  $('tm_adv').innerHTML=usd(adv)+'<small id="tm_pct">'+Math.round(pct)+'%</small>';
+  $('tm_tot').textContent=usd(adv*dur);
+  $('tm_msg').innerHTML='Estimated monthly cost-to-capability advantage: <b>'+usd(adv)+
+    '</b>, while retaining access to vetted skills, compliance support, delivery governance and Anicalls-managed onboarding.';
+}
+function ahCalc(){
+  const res=+$('ah_res').value, cost=+$('ah_cost').value, ai=+$('ah_ai').value,
+        prod=+$('ah_prod').value, sub=+$('ah_sub').value||0, gov=+$('ah_gov').value||0;
+  $('ah_res_o').textContent=res;
+  $('ah_cost_o').textContent=usd(cost);
+  $('ah_ai_o').textContent=ai;
+  $('ah_prod_o').textContent=prod+'%';
+  const cur=res*cost;
+  const reduced=cur*(1-prod/100);
+  const nw=reduced+ai*sub+gov;
+  const gain=Math.max(0,cur-nw);
+  $('ah_cur').textContent=usd(cur);
+  $('ah_new').textContent=usd(nw);
+  $('ah_gain').innerHTML=usd(gain)+'<small id="ah_annual">'+usd(gain*12)+' / year</small>';
+  $('ah_fte').textContent=(res*prod/100).toFixed(1)+' FTE';
+  const area=$('ah_area').value;
+  $('ah_sugg').textContent=aiSuggest[area]||'AI Business Analyst';
+}
+tmCalc();ahCalc();
+
+const quizAnswers={};
+const quizTotal=document.querySelectorAll('.quiz-q').length;
+document.querySelectorAll('.quiz-q').forEach(q=>{
+  q.querySelectorAll('.quiz-opt').forEach(opt=>{
+    opt.addEventListener('click',()=>{
+      q.querySelectorAll('.quiz-opt').forEach(o=>o.classList.remove('sel'));
+      opt.classList.add('sel');
+      quizAnswers[q.dataset.q]=+opt.dataset.v;
+      if(Object.keys(quizAnswers).length===quizTotal){
+        const sum=Object.values(quizAnswers).reduce((a,b)=>a+b,0);
+        let band,text;
+        if(sum<=8){band='Exploring';text="You're early in the AI workforce journey: the easiest stage to design governance in from the start rather than retrofit it later.";}
+        else if(sum<=13){band='Preparing';text='Foundational readiness is forming. A structured assessment can identify the two or three processes best suited to a first AI employee deployment.';}
+        else if(sum<=17){band='Ready to Pilot';text='You have enough governance and documentation maturity to deploy a first governed AI employee with confidence.';}
+        else{band='Ready to Scale';text='Your foundations support scaling AI employees across multiple functions under a single governance layer.';}
+        $('quizBand').textContent=band;
+        $('quizText').textContent=text;
+        $('quizResult').classList.add('show');
+        $('quizResult').scrollIntoView({behavior:'smooth',block:'center'});
+      }
+    });
+  });
+});
+
+</script>
+<script src="assests/js/login-modal.js?v=3"></script>
+<script src="assests/js/booking.js?v=3"></script>
+</body>
+</html>

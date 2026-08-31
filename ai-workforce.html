@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Workforce On-Demand: 20 Governed AI Employee Roles | Anicalls</title>
+<meta name="description" content="Twenty fully defined AI employee profiles with human oversight models, best-fit use cases, enterprise integrations and expected value, governed by Agent OS™.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <div class="wrap nav-in">
+    <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-icon-home" aria-label="Home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></a>
+      <a href="ai-workforce.html" class="active">AI Workforce</a>
+      <a href="talent.html">IT Talent</a>
+      <a href="anicalls-careers.html">Careers</a>
+      <a href="gcc.html">GCC &amp; BOT</a>
+      <a href="managed-operations.html">Managed Ops</a>
+      <a href="anicalls-pricing-ites.html">Pricing</a>
+      <a href="agent-os.html">Agent OS™</a>
+      <a href="solutions.html">Solutions &amp; ROI</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="index.html#contact" data-booking="Executive Briefing" aria-label="Book a Consultation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></a>
+      <button class="menu-btn" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-fold">
+<header class="page-hero hero-compact">
+  <div class="hero-media" aria-hidden="true">
+     <img
+    src="assests/ai-workforce (2).png"
+    alt="AI Workforce"
+    class="hero-image"
+    loading="eager">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="wrap reveal page-hero-content" data-dir="left">
+    <div class="crumb"><a href="index.html">Home</a><i>/</i>AI Workforce On-Demand</div>
+    <h1>Twenty AI employees<br> <span class="accent">Every one governed,<br>every one accountable.</span></h1>
+    <p class="sub">AI employees work best on repetitive, rules-based, research-heavy and workflow-driven processes, with clear governance, escalation paths and human review. Each profile below defines exactly what the role does, who oversees it, where it fits, what it connects to and what value to expect. Open any drawer.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="index.html#contact">Request an AI Workforce Assessment <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="agent-os.html">See the Governance Layer: Agent OS™</a>
+      <a class="btn btn-gold" href="solutions.html#calculator">Model the Productivity Gain</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ AI PLATFORMS MARQUEE ============
+     Logos live in assests/images/ai-logos/ — all 8 platforms supplied
+     (chatgpt/copilot/deepseek/gemini/grok/mistral/perplexity as .png,
+     claude as .webp). The onerror handler on each <img> is a safety net:
+     if a file is ever renamed/removed, that logo falls back to a clean
+     text badge instead of a broken-image icon. -->
+<section class="ai-logos-band">
+  <div class="logo-marquee" id="aiLogoMarquee">
+    <div class="logo-marquee__track">
+      <div class="logo-marquee__group">
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/chatgpt.png" alt="ChatGPT" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">ChatGPT</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/claude.webp" alt="Claude" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Claude</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/gemini.png" alt="Google Gemini" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Google Gemini</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/perplexity.png" alt="Perplexity AI" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Perplexity AI</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/copilot.png" alt="Microsoft Copilot" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Microsoft Copilot</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/deepseek.png" alt="DeepSeek" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">DeepSeek</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/grok.png" alt="Grok" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Grok</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/mistral.png" alt="Mistral AI" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Mistral AI</span></div>
+      </div>
+      <div class="logo-marquee__group" aria-hidden="true">
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/chatgpt.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">ChatGPT</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/claude.webp" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Claude</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/gemini.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Google Gemini</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/perplexity.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Perplexity AI</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/copilot.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Microsoft Copilot</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/deepseek.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">DeepSeek</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/grok.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Grok</span></div>
+        <div class="logo-marquee__item"><img src="assests/images/ai-logos/mistral.png" alt="" aria-hidden="true" loading="lazy" width="120" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="logo-marquee__fallback">Mistral AI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="drawers">
+
+      <details class="drawer ai-drawer reveal" open>
+        <summary><div class="d-ic"><img src="assests/images/hr-recruitement.png" alt="" loading="lazy"></div><div class="d-nm">AI Recruiter<small>Talent Acquisition</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Sources, screens and shortlists candidates against role criteria; drafts outreach and schedules interviews across high-volume requisitions.</div>
+          <div class="rw2"><b>Human oversight model</b>Recruiter approval before any candidate submission; no automated rejection without human review; bias monitoring and audit trail on every screening decision.</div>
+          <div class="rw2"><b>Best-fit use cases</b>High-volume technical hiring, GCC ramp-ups, pipeline building for rare skills.</div>
+          <div class="rw2"><b>Integrations</b>ATS platforms, job boards, CRM, calendar and email systems.</div>
+          <div class="rw2"><b>Expected value</b>Faster shortlists, wider sourcing coverage and consistent screening quality across every requisition.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/ai-sdr.png" alt="" loading="lazy"></div><div class="d-nm">AI Sales Development Representative<small>Revenue Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Researches accounts, builds prospect lists, drafts personalised outreach and qualifies inbound interest before handover.</div>
+          <div class="rw2"><b>Human oversight model</b>Sales approval gates on all outbound messaging; humans own calls, negotiation and relationships end to end.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Pipeline generation, account research, CRM hygiene and follow-up discipline at scale.</div>
+          <div class="rw2"><b>Integrations</b>CRM, email, LinkedIn workflows and data-enrichment tools.</div>
+          <div class="rw2"><b>Expected value</b>More qualified conversations per rep and a lower cost per opportunity.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/customer-ai.png" alt="" loading="lazy"></div><div class="d-nm">AI Customer Support Agent<small>Customer Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Resolves routine queries, drafts responses, triages tickets and maintains knowledge articles across support channels.</div>
+          <div class="rw2"><b>Human oversight model</b>Escalation paths for complex or sensitive cases; quality sampling and audit review of resolved tickets.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Tier-1 support volume, after-hours coverage and multilingual response drafting.</div>
+          <div class="rw2"><b>Integrations</b>Helpdesk, CRM, knowledge base and chat channels.</div>
+          <div class="rw2"><b>Expected value</b>Faster first response, consistent quality, human agents focused on complex cases.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/finance.png" alt="" loading="lazy"></div><div class="d-nm">AI Finance Analyst<small>Finance Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Runs reconciliations, variance analysis, report preparation, invoice matching and data validation on defined cycles.</div>
+          <div class="rw2"><b>Human oversight model</b>Finance sign-off on all outputs; exceptions routed to human review with a full audit trail.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Month-end close support, AP/AR operations and management reporting packs.</div>
+          <div class="rw2"><b>Integrations</b>ERP, accounting platforms, spreadsheets and BI tools.</div>
+          <div class="rw2"><b>Expected value</b>Shorter close cycles, fewer manual errors, analyst time redirected to judgement work.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/helpdesk.png" alt="" loading="lazy"></div><div class="d-nm">AI IT Service Desk Agent<small>IT Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Handles password resets, access requests, routine incidents and ticket categorisation around the clock.</div>
+          <div class="rw2"><b>Human oversight model</b>Role-based access control; privileged actions require human approval before execution.</div>
+          <div class="rw2"><b>Best-fit use cases</b>High-volume L1 support, 24×7 coverage and service catalogue automation.</div>
+          <div class="rw2"><b>Integrations</b>ITSM platforms (ServiceNow, Jira), identity systems and monitoring tools.</div>
+          <div class="rw2"><b>Expected value</b>Lower ticket backlog, faster resolution and engineers freed for L2/L3 work.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/governanceai.png" alt="" loading="lazy"></div><div class="d-nm">AI Compliance Analyst<small>Risk &amp; Compliance</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Monitors policy adherence, prepares audit documentation, tracks regulatory tasks and flags anomalies for review.</div>
+          <div class="rw2"><b>Human oversight model</b>Compliance officers own all determinations: the AI prepares, humans decide.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Regulated industries, audit preparation and controls-testing support.</div>
+          <div class="rw2"><b>Integrations</b>GRC platforms, document repositories and workflow tools.</div>
+          <div class="rw2"><b>Expected value</b>Audit-ready documentation, earlier flagging and reduced manual review burden.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/hr.png" alt="" loading="lazy"></div><div class="d-nm">AI HR Executive<small>People Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Answers employee policy queries, drafts HR letters and documents, coordinates onboarding checklists and maintains employee records workflows.</div>
+          <div class="rw2"><b>Human oversight model</b>HR business partners approve all employee-facing communications; sensitive cases (grievances, ER matters) route directly to humans.</div>
+          <div class="rw2"><b>Best-fit use cases</b>HR shared services, onboarding at scale, policy Q&amp;A and document administration.</div>
+          <div class="rw2"><b>Integrations</b>HRIS (Workday, SuccessFactors), document management, e-signature and ticketing systems.</div>
+          <div class="rw2"><b>Expected value</b>Faster employee response times and HR professionals focused on judgement-heavy people work.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/ap-ar.png" alt="" loading="lazy"></div><div class="d-nm">AI Accountant<small>Finance Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Processes journals, codes transactions, matches invoices to POs and receipts, and prepares supporting schedules for review.</div>
+          <div class="rw2"><b>Human oversight model</b>Qualified accountants review and post all entries; materiality thresholds trigger mandatory human approval.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Transaction-heavy AP/AR environments, multi-entity bookkeeping and close preparation.</div>
+          <div class="rw2"><b>Integrations</b>ERP and accounting platforms, banking feeds, expense tools and document capture.</div>
+          <div class="rw2"><b>Expected value</b>Higher transaction throughput with cleaner coding and fewer late-close surprises.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/procuement-ai.png" alt="" loading="lazy"></div><div class="d-nm">AI Procurement Assistant<small>Procurement</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Prepares purchase requisitions, checks policy compliance, tracks approvals, chases supplier confirmations and maintains catalogue data.</div>
+          <div class="rw2"><b>Human oversight model</b>Procurement owners approve all commitments; spend above thresholds always requires human sign-off.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Tail-spend administration, requisition-to-PO processing and supplier follow-up discipline.</div>
+          <div class="rw2"><b>Integrations</b>ERP procurement modules, Ariba/Coupa, supplier portals and contract repositories.</div>
+          <div class="rw2"><b>Expected value</b>Shorter requisition cycles, stronger policy adherence and category managers freed for negotiation.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/analytics.png" alt="" loading="lazy"></div><div class="d-nm">AI Data Analyst<small>Data &amp; Analytics</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Runs recurring reports, monitors KPIs, drafts commentary on movements, validates data quality and answers ad-hoc data questions.</div>
+          <div class="rw2"><b>Human oversight model</b>Analysts verify methodology and sign off insights before distribution; anomalies flagged for human interpretation.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Recurring management reporting, KPI monitoring and first-pass exploratory analysis.</div>
+          <div class="rw2"><b>Integrations</b>Data warehouses, BI platforms (Power BI, Tableau), spreadsheets and SQL environments.</div>
+          <div class="rw2"><b>Expected value</b>Reporting cadence maintained without analyst burnout, and faster answers to routine data questions.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/ai-close.png" alt="" loading="lazy"></div><div class="d-nm">AI Research Analyst<small>Strategy &amp; Insight</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Conducts market, competitor and account research; synthesises sources into structured briefs with references for verification.</div>
+          <div class="rw2"><b>Human oversight model</b>Researchers validate sources and conclusions before any brief informs a decision; confidence levels stated explicitly.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Deal research, market-entry scans, competitive monitoring and RFP intelligence.</div>
+          <div class="rw2"><b>Integrations</b>Web research tools, document repositories, CRM and knowledge bases.</div>
+          <div class="rw2"><b>Expected value</b>Research depth previously reserved for major decisions, available for everyday ones.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/revenue-growth1.png" alt="" loading="lazy"></div><div class="d-nm">AI Marketing Assistant<small>Marketing Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Drafts campaign copy variants, maintains content calendars, prepares performance summaries and manages asset libraries.</div>
+          <div class="rw2"><b>Human oversight model</b>Marketing owns brand voice: nothing publishes without human approval; brand and claims checks on every asset.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Content operations at scale, campaign administration and reporting cadence.</div>
+          <div class="rw2"><b>Integrations</b>Marketing automation platforms, CMS, social scheduling and analytics tools.</div>
+          <div class="rw2"><b>Expected value</b>More campaign throughput per marketer with consistent brand discipline.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/operation-ai.png" alt="" loading="lazy"></div><div class="d-nm">AI Operations Coordinator<small>Business Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Tracks task queues, chases open actions, updates trackers, prepares status summaries and keeps operational workflows moving.</div>
+          <div class="rw2"><b>Human oversight model</b>Operations leads set priorities and resolve conflicts; the coordinator reports, escalates and never overrides human decisions.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Multi-team coordination, SLA tracking and operational reporting rhythms.</div>
+          <div class="rw2"><b>Integrations</b>Project tools (Jira, Asana), spreadsheets, chat platforms and workflow systems.</div>
+          <div class="rw2"><b>Expected value</b>Nothing falls through the cracks: follow-up discipline without the follow-up meetings.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/executive-ai.png" alt="" loading="lazy"></div><div class="d-nm">AI Executive Assistant<small>Executive Support</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Manages calendar coordination, drafts correspondence, prepares meeting briefs and agendas, and tracks executive action items.</div>
+          <div class="rw2"><b>Human oversight model</b>The executive (or their human EA) approves external communications and commitments; confidentiality boundaries strictly configured.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Meeting-heavy leadership calendars, pre-read preparation and correspondence triage.</div>
+          <div class="rw2"><b>Integrations</b>Email, calendar, document platforms and travel/expense tools.</div>
+          <div class="rw2"><b>Expected value</b>Executive time reclaimed from administration and every meeting entered prepared.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/ai-business.png" alt="" loading="lazy"></div><div class="d-nm">AI Business Analyst<small>Transformation</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Drafts requirements documentation, process maps and user stories from stakeholder inputs; maintains traceability matrices.</div>
+          <div class="rw2"><b>Human oversight model</b>Senior BAs validate requirements with stakeholders before sign-off; the AI accelerates documentation, humans own understanding.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Large programmes with heavy documentation loads, backlog refinement and process discovery support.</div>
+          <div class="rw2"><b>Integrations</b>Jira, Confluence, process-mining outputs and document repositories.</div>
+          <div class="rw2"><b>Expected value</b>Documentation that keeps pace with delivery instead of trailing it.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/qa-analyst.png" alt="" loading="lazy"></div><div class="d-nm">AI QA Analyst<small>Quality Engineering</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Generates test cases from requirements, executes regression checks, logs defects with reproduction steps and maintains test documentation.</div>
+          <div class="rw2"><b>Human oversight model</b>QA leads own test strategy and release decisions; exploratory and judgement-based testing remains human.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Regression-heavy release cycles, test documentation upkeep and defect triage support.</div>
+          <div class="rw2"><b>Integrations</b>Test management tools, CI/CD pipelines, Jira and automation frameworks.</div>
+          <div class="rw2"><b>Expected value</b>Broader regression coverage per cycle without expanding the QA headcount line.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/ai-document.png" alt="" loading="lazy"></div><div class="d-nm">AI Documentation Specialist<small>Knowledge Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Creates and maintains SOPs, runbooks, knowledge articles and process documentation; keeps versions current as processes change.</div>
+          <div class="rw2"><b>Human oversight model</b>Process owners review and approve all published documentation; changes tracked with full version history.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Knowledge-base builds, GCC process documentation and audit-readiness programmes.</div>
+          <div class="rw2"><b>Integrations</b>Wikis (Confluence, SharePoint), document management and ITSM knowledge modules.</div>
+          <div class="rw2"><b>Expected value</b>Documentation that is actually current: the foundation of every transfer and every audit.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/lead-generation.png" alt="" loading="lazy"></div><div class="d-nm">AI Lead Generation Agent<small>Revenue Operations</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Identifies prospects matching ideal customer profiles, enriches contact data, scores fit and maintains clean lead lists.</div>
+          <div class="rw2"><b>Human oversight model</b>Sales defines targeting criteria and approves list quality; outreach itself follows the approval gates of the AI SDR model.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Territory build-outs, event follow-up processing and continuous pipeline sourcing.</div>
+          <div class="rw2"><b>Integrations</b>CRM, enrichment providers, intent-data tools and marketing automation.</div>
+          <div class="rw2"><b>Expected value</b>A consistently full top of funnel without list-building consuming selling time.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/vendor-management.png" alt="" loading="lazy"></div><div class="d-nm">AI Vendor Management Agent<small>Procurement &amp; IT</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Tracks vendor contracts, renewal dates and SLA performance; prepares vendor scorecards and flags expiring agreements early.</div>
+          <div class="rw2"><b>Human oversight model</b>Vendor owners make all commercial decisions; the agent surfaces evidence and deadlines, never negotiates.</div>
+          <div class="rw2"><b>Best-fit use cases</b>Sprawling vendor estates, renewal management and SLA compliance tracking.</div>
+          <div class="rw2"><b>Integrations</b>Contract repositories, ERP, ITSM and spend-analytics tools.</div>
+          <div class="rw2"><b>Expected value</b>No surprise auto-renewals and negotiation leverage built from evidence, not memory.</div>
+        </div>
+      </details>
+
+      <details class="drawer ai-drawer reveal">
+        <summary><div class="d-ic"><img src="assests/images/people-analysis.png" alt="" loading="lazy"></div><div class="d-nm">AI Candidate Engagement Agent<small>Talent Acquisition</small></div><span class="d-tg">+</span></summary>
+        <div class="d-body">
+          <div class="rw2"><b>What it does</b>Keeps candidates informed through the hiring process: status updates, interview logistics, document collection and pre-boarding communication.</div>
+          <div class="rw2"><b>Human oversight model</b>Recruiters approve communication templates and handle all sensitive conversations; candidates can always reach a human.</div>
+          <div class="rw2"><b>Best-fit use cases</b>High-volume hiring funnels, GCC ramp-ups and offer-to-join engagement where drop-off is costly.</div>
+          <div class="rw2"><b>Integrations</b>ATS, email/SMS/WhatsApp channels, calendar and e-signature tools.</div>
+          <div class="rw2"><b>Expected value</b>Lower candidate drop-off and a hiring experience that reflects well on your brand.</div>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="cta-band reveal" style="margin-top:64px">
+      <div>
+        <h2>Which three roles should you deploy first?</h2>
+        <p>A structured AI workforce assessment maps your processes to the right AI employees, governed by <a href="agent-os.html" style="color:var(--blue)">Agent OS™</a> from day one.</p>
+      </div>
+      <a class="btn btn-primary" href="index.html#contact">Request an Assessment <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo"><img src="assests/Logo/2.png" alt="Anicalls" class="logo-img logo-img-dark"><img src="assests/Logo/1.png" alt="Anicalls" class="logo-img logo-img-light"><small></small></a>
+        <p style="font-size:13.5px;color:var(--faint);margin-top:16px;max-width:300px">AI employees, niche global IT talent, GCC build-outs and managed operations, one accountable partner across six countries.</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="ai-workforce.html">AI Workforce</a>
+        <a href="agent-os.html">Agent OS™</a>
+        <a href="talent.html">Global IT Talent</a>
+        <a href="gcc.html">GCC &amp; BOT</a>
+        <a href="managed-operations.html">Managed Operations</a>
+      </div>
+      <div>
+        <h5>Decide</h5>
+        <a href="solutions.html">Solutions &amp; ROI</a>
+        <a href="solutions.html#calculator">Cost Advantage Calculator</a>
+        <a href="gcc.html#bot-calculator">GCC BOT Calculator</a>
+        <a href="solutions.html#compare">Model Comparisons</a>
+        <a href="case-studies.html">Case Studies</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About Anicalls</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Anicalls (Pty) Ltd. All rights reserved.</span>
+      <span>Compliance-first · Human-in-the-loop AI · GDPR-aware · POPIA-aware</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'))}
+
+const navEl=document.querySelector('nav');
+if(navEl){
+  const onScroll=()=>navEl.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+}
+document.querySelectorAll('.btn').forEach(btn=>{
+  btn.addEventListener('pointerdown',e=>{
+    const r=btn.getBoundingClientRect();
+    const s=document.createElement('span');
+    s.className='rip';
+    const size=Math.max(r.width,r.height)*1.4;
+    s.style.width=s.style.height=size+'px';
+    s.style.left=(e.clientX-r.left-size/2)+'px';
+    s.style.top=(e.clientY-r.top-size/2)+'px';
+    btn.appendChild(s);
+    s.addEventListener('animationend',()=>s.remove());
+  });
+});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const counters=document.querySelectorAll('[data-count-to]');
+  if(counters.length){
+    const cio=new IntersectionObserver(es=>es.forEach(e=>{
+      if(!e.isIntersecting)return;
+      const el=e.target,target=+el.dataset.countTo,dur=900,t0=performance.now();
+      const step=t=>{
+        const p=Math.min(1,(t-t0)/dur);
+        el.textContent=Math.round(target*(1-Math.pow(1-p,3)));
+        if(p<1)requestAnimationFrame(step);else el.textContent=target;
+      };
+      requestAnimationFrame(step);
+      cio.unobserve(el);
+    }),{threshold:.4});
+    counters.forEach(el=>cio.observe(el));
+  }
+}
+
+</script>
+<script src="assests/js/login-modal.js?v=3"></script>
+<script src="assests/js/booking.js?v=3"></script>
+</body>
+</html>

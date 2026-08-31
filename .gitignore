@@ -1,0 +1,33 @@
+# Dependencies
+vendor/
+node_modules/
+
+# Logs
+*.log
+api/logs/
+
+# User uploaded files
+api/uploads/
+files/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Per-environment credential config (real values live here, NOT in git).
+# Copy the matching *.example.php on each environment and fill in.
+/api/google-config.php
+/user/config.php
+
+# Debug / scratch output
+/api/debug.txt
+
+# Large media assets — deploy to the server / CDN separately, not via git
+*.mp4
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
